@@ -24,9 +24,24 @@
             <div class="btn-div">
                 <div><img class="img" src="Phone call.png" alt=""></div>
                 <div><img class="img" src="Chrome-icon.png" alt=""></div>
-                <div><img class="img" src="camera icon.png" alt=""></div>
+                <div id="cam-div" onclick="openCamera()">
+                    <img class="img" src="camera icon.png" alt="">     
+                </div>
             </div>
         </div>
+        <div id="camera-section">
+            <video id="camera-screen" autoplay></video>
+            <div class="show-side">
+                <canvas id="canvas"></canvas>
+                <button id="take-picture" onclick="takePix()">
+                    <div class="small-snap"></div>
+                </button>
+            </div>
+
+        </div>
     </main>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
