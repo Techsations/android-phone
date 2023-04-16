@@ -9,3 +9,8 @@ async function openCamera() {
     let thePix = await navigator.mediaDevices.getUserMedia({audio: false, video:true})
     video.srcObject = thePix;
 }
+
+function takePix() {
+    canvas.getContext("2d").drawImage(video, 0, 0, canvas.width, canvas.height);
+    
+}
